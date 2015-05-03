@@ -4,7 +4,8 @@
   "main": "es5.js",
   "scripts": {
     "build": "babel es6.js -o es5.js",
-    "test": "istanbul test ./node_modules/mocha/bin/_mocha --report html -- -R spec"
+    "test": "istanbul test ./node_modules/mocha/bin/_mocha --report html -- -R spec",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && rm -rf ./coverage"
   },
   "author": "Pedram Emrouznejad (https://github.com/pemrouz)",
   "license": "pemrouz.mit-license.org",
