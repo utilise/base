@@ -1,5 +1,5 @@
 var expect = require('chai').expect
-  , base   = require('./es5')
+  , base   = require('./')
 
 describe('base', function() {
   describe('when partially applied', function() {
